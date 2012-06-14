@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TidErPengeTests' target in the 'TidErPengeTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

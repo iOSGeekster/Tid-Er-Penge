@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		242545301501199400F4B18E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2425452F1501199400F4B18E /* AudioToolbox.framework */; };
+		24254532150119A300F4B18E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24254531150119A300F4B18E /* SystemConfiguration.framework */; };
+		2426D75B1479813F00BC0C63 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2426D75A1479813F00BC0C63 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		242972EC13FEA5F30026D74C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242972EA13FEA5F30026D74C /* SettingsViewController.m */; };
+		242972EF13FEA61C0026D74C /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242972F113FEA61C0026D74C /* SettingsView.xib */; };
+		244EA3461500B9B300BD68D4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244EA3451500B9B300BD68D4 /* iAd.framework */; };
+		245FE32013BF6924001737DC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245FE31F13BF6924001737DC /* MessageUI.framework */; };
+		247316B915029A7500EC28C8 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247316B815029A7500EC28C8 /* libGoogleAdMobAds.a */; };
+		248506C013DF15B70074B27E /* SaveLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248506C213DF15B70074B27E /* SaveLogView.xib */; };
+		248506C313DF15BB0074B27E /* SaveLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248506C513DF15BB0074B27E /* SaveLogViewController.m */; };
+		248A414E13BF686500409BC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414D13BF686500409BC4 /* UIKit.framework */; };
+		248A415013BF686500409BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414F13BF686500409BC4 /* Foundation.framework */; };
+		248A415213BF686500409BC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A415113BF686500409BC4 /* CoreGraphics.framework */; };
+		248A415813BF686500409BC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248A415613BF686500409BC4 /* InfoPlist.strings */; };
+		248A415B13BF686500409BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A415A13BF686500409BC4 /* main.m */; };
+		248A415E13BF686500409BC4 /* TidErPengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A415D13BF686500409BC4 /* TidErPengeAppDelegate.m */; };
+		248A416113BF686500409BC4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248A415F13BF686500409BC4 /* MainWindow.xib */; };
+		248A416413BF686500409BC4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A416313BF686500409BC4 /* MainViewController.m */; };
+		248A416913BF686500409BC4 /* LogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A416813BF686500409BC4 /* LogsViewController.m */; };
+		248A417213BF686500409BC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414D13BF686500409BC4 /* UIKit.framework */; };
+		248A417313BF686500409BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414F13BF686500409BC4 /* Foundation.framework */; };
+		248A417413BF686500409BC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A415113BF686500409BC4 /* CoreGraphics.framework */; };
+		248A417C13BF686500409BC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248A417A13BF686500409BC4 /* InfoPlist.strings */; };
+		248A417F13BF686500409BC4 /* TidErPengeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 248A417E13BF686500409BC4 /* TidErPengeTests.h */; };
+		248A418113BF686500409BC4 /* TidErPengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A418013BF686500409BC4 /* TidErPengeTests.m */; };
+		248ECAE71479A53A00FE7FC0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2426D75A1479813F00BC0C63 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		249043231403F5F5002E87A8 /* processing.png in Resources */ = {isa = PBXBuildFile; fileRef = 249043211403F5F5002E87A8 /* processing.png */; };
+		2497D5B313D73F38007D99B0 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2497D5B513D73F38007D99B0 /* MainView.xib */; };
+		249A8DEC13C4CB2C00FF5346 /* rsz_time-and-money.png in Resources */ = {isa = PBXBuildFile; fileRef = 249A8DEB13C4CB2C00FF5346 /* rsz_time-and-money.png */; };
+		249A8DEE13C4CB8F00FF5346 /* rsz_1time-and-money.png in Resources */ = {isa = PBXBuildFile; fileRef = 249A8DED13C4CB8F00FF5346 /* rsz_1time-and-money.png */; };
+		249B23B313F5606E001E518D /* ShowLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B23B513F5606E001E518D /* ShowLogView.xib */; };
+		249F382A13F7FF6100032627 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 249F382913F7FF6100032627 /* Default.png */; };
+		24A10DF013D5E3A60094FA1E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A10DEF13D5E3A60094FA1E /* CoreMotion.framework */; };
+		24A4FFCA13F7F5CA0080A157 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A4FFC913F7F5CA0080A157 /* bookmark.png */; };
+		24ABC0F01455D3B9000D9326 /* TidErPenge Lite-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24ABC0EF1455D3B9000D9326 /* TidErPenge Lite-Info.plist */; };
+		24ABC0F31455D3CF000D9326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24ABC0F51455D3CF000D9326 /* InfoPlist.strings */; };
+		24B8515214543A4E00729BB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A415A13BF686500409BC4 /* main.m */; };
+		24B8515314543A4E00729BB4 /* TidErPengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A415D13BF686500409BC4 /* TidErPengeAppDelegate.m */; };
+		24B8515414543A4E00729BB4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A416313BF686500409BC4 /* MainViewController.m */; };
+		24B8515514543A4E00729BB4 /* LogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A416813BF686500409BC4 /* LogsViewController.m */; };
+		24B8515614543A4E00729BB4 /* SaveLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248506C513DF15BB0074B27E /* SaveLogViewController.m */; };
+		24B8515714543A4E00729BB4 /* ShowLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BF38E913F2DDA10032F8DD /* ShowLogViewController.m */; };
+		24B8515814543A4E00729BB4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242972EA13FEA5F30026D74C /* SettingsViewController.m */; };
+		24B8515A14543A4E00729BB4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A10DEF13D5E3A60094FA1E /* CoreMotion.framework */; };
+		24B8515B14543A4E00729BB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414D13BF686500409BC4 /* UIKit.framework */; };
+		24B8515C14543A4E00729BB4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245FE31F13BF6924001737DC /* MessageUI.framework */; };
+		24B8515D14543A4E00729BB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A414F13BF686500409BC4 /* Foundation.framework */; };
+		24B8515E14543A4E00729BB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248A415113BF686500409BC4 /* CoreGraphics.framework */; };
+		24B8516114543A4E00729BB4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248A415F13BF686500409BC4 /* MainWindow.xib */; };
+		24B8516214543A4E00729BB4 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2497D5B513D73F38007D99B0 /* MainView.xib */; };
+		24B8516414543A4E00729BB4 /* rsz_time-and-money.png in Resources */ = {isa = PBXBuildFile; fileRef = 249A8DEB13C4CB2C00FF5346 /* rsz_time-and-money.png */; };
+		24B8516514543A4E00729BB4 /* rsz_1time-and-money.png in Resources */ = {isa = PBXBuildFile; fileRef = 249A8DED13C4CB8F00FF5346 /* rsz_1time-and-money.png */; };
+		24B8516614543A4E00729BB4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C43B2A13D747D000A0D3E5 /* Localizable.strings */; };
+		24B8516714543A4E00729BB4 /* SaveLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248506C213DF15B70074B27E /* SaveLogView.xib */; };
+		24B8516814543A4E00729BB4 /* ShowLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B23B513F5606E001E518D /* ShowLogView.xib */; };
+		24B8516914543A4E00729BB4 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A4FFC913F7F5CA0080A157 /* bookmark.png */; };
+		24B8516A14543A4E00729BB4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 249F382913F7FF6100032627 /* Default.png */; };
+		24B8516B14543A4E00729BB4 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242972F113FEA61C0026D74C /* SettingsView.xib */; };
+		24B8516C14543A4E00729BB4 /* processing.png in Resources */ = {isa = PBXBuildFile; fileRef = 249043211403F5F5002E87A8 /* processing.png */; };
+		24BF38EB13F2DDA10032F8DD /* ShowLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BF38E913F2DDA10032F8DD /* ShowLogViewController.m */; };
+		24C38C3A15867F9F008F4772 /* leather-navbar-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3415867F9F008F4772 /* leather-navbar-black.png */; };
+		24C38C3B15867F9F008F4772 /* leather-navbar-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3515867F9F008F4772 /* leather-navbar-black@2x.png */; };
+		24C38C3C15867F9F008F4772 /* navbar-back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3615867F9F008F4772 /* navbar-back-button.png */; };
+		24C38C3D15867F9F008F4772 /* navbar-back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3715867F9F008F4772 /* navbar-back-button@2x.png */; };
+		24C38C3E15867F9F008F4772 /* navbar-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3815867F9F008F4772 /* navbar-button.png */; };
+		24C38C3F15867F9F008F4772 /* navbar-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C38C3915867F9F008F4772 /* navbar-button@2x.png */; };
+		24C43B2813D747D000A0D3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C43B2A13D747D000A0D3E5 /* Localizable.strings */; };
+		24E130A9155421960063335E /* MainView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E130AC155421960063335E /* MainView~ipad.xib */; };
+		24E130AA155421960063335E /* MainView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E130AC155421960063335E /* MainView~ipad.xib */; };
+		258267F81469AADB00097370 /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258267F61469AADB00097370 /* FlipsideView.xib */; };
+		258267F91469AADB00097370 /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258267F61469AADB00097370 /* FlipsideView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248A417513BF686500409BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248A414013BF686500409BC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248A414813BF686500409BC4;
+			remoteInfo = TidErPenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2425452F1501199400F4B18E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		24254531150119A300F4B18E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2426D75814797D5E00BC0C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShowLogView.xib; sourceTree = "<group>"; };
+		2426D75914797EC800BC0C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideView.xib; sourceTree = "<group>"; };
+		2426D75A1479813F00BC0C63 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		242972E913FEA5F30026D74C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		242972EA13FEA5F30026D74C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		242972F013FEA61C0026D74C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SettingsView.xib; sourceTree = "<group>"; };
+		242972F213FEA6200026D74C /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/SettingsView.xib; sourceTree = "<group>"; };
+		244EA3451500B9B300BD68D4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		245FE31F13BF6924001737DC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		247316B215029A7500EC28C8 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		247316B315029A7500EC28C8 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		247316B415029A7500EC28C8 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		247316B515029A7500EC28C8 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		247316B615029A7500EC28C8 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		247316B715029A7500EC28C8 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		247316B815029A7500EC28C8 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		248506BA13DF15A80074B27E /* SaveLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveLogViewController.h; sourceTree = "<group>"; };
+		248506C113DF15B70074B27E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SaveLogView.xib; sourceTree = "<group>"; };
+		248506C413DF15BB0074B27E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/SaveLogViewController.m; sourceTree = "<group>"; };
+		248506C613DF15C80074B27E /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/SaveLogView.xib; sourceTree = "<group>"; };
+		248A414913BF686500409BC4 /* TidErPenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TidErPenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248A414D13BF686500409BC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		248A414F13BF686500409BC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		248A415113BF686500409BC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		248A415713BF686500409BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248A415913BF686500409BC4 /* TidErPenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TidErPenge-Prefix.pch"; sourceTree = "<group>"; };
+		248A415A13BF686500409BC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		248A415C13BF686500409BC4 /* TidErPengeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TidErPengeAppDelegate.h; sourceTree = "<group>"; };
+		248A415D13BF686500409BC4 /* TidErPengeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TidErPengeAppDelegate.m; sourceTree = "<group>"; };
+		248A416013BF686500409BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		248A416213BF686500409BC4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		248A416313BF686500409BC4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		248A416713BF686500409BC4 /* LogsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogsViewController.h; sourceTree = "<group>"; };
+		248A416813BF686500409BC4 /* LogsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogsViewController.m; sourceTree = "<group>"; };
+		248A417113BF686500409BC4 /* TidErPengeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TidErPengeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248A417913BF686500409BC4 /* TidErPengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TidErPengeTests-Info.plist"; sourceTree = "<group>"; };
+		248A417B13BF686500409BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248A417D13BF686500409BC4 /* TidErPengeTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TidErPengeTests-Prefix.pch"; sourceTree = "<group>"; };
+		248A417E13BF686500409BC4 /* TidErPengeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TidErPengeTests.h; sourceTree = "<group>"; };
+		248A418013BF686500409BC4 /* TidErPengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TidErPengeTests.m; sourceTree = "<group>"; };
+		249043211403F5F5002E87A8 /* processing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = processing.png; sourceTree = "<group>"; };
+		2497D5B413D73F38007D99B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainView.xib; sourceTree = "<group>"; };
+		2497D5B713D73F56007D99B0 /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/MainView.xib; sourceTree = "<group>"; };
+		2497D5BC13D74297007D99B0 /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		249A8DEB13C4CB2C00FF5346 /* rsz_time-and-money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsz_time-and-money.png"; sourceTree = "<group>"; };
+		249A8DED13C4CB8F00FF5346 /* rsz_1time-and-money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsz_1time-and-money.png"; sourceTree = "<group>"; };
+		249B23B713F56073001E518D /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/ShowLogView.xib; sourceTree = "<group>"; };
+		249B23BB13F57F8F001E518D /* TidErPenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TidErPenge-Info.plist"; sourceTree = "<group>"; };
+		249F382913F7FF6100032627 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		24A10DEF13D5E3A60094FA1E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		24A4FFC813F7F23F0080A157 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24A4FFC913F7F5CA0080A157 /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		24ABC0EF1455D3B9000D9326 /* TidErPenge Lite-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TidErPenge Lite-Info.plist"; sourceTree = "<group>"; };
+		24ABC0F41455D3CF000D9326 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24ABC0F61455D3D5000D9326 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24B8517314543A4E00729BB4 /* TidErPenge.Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TidErPenge.Lite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BF38E813F2DDA10032F8DD /* ShowLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowLogViewController.h; sourceTree = "<group>"; };
+		24BF38E913F2DDA10032F8DD /* ShowLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowLogViewController.m; sourceTree = "<group>"; };
+		24C38C3415867F9F008F4772 /* leather-navbar-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leather-navbar-black.png"; path = "TidErPenge/leather-navbar-black.png"; sourceTree = "<group>"; };
+		24C38C3515867F9F008F4772 /* leather-navbar-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leather-navbar-black@2x.png"; path = "TidErPenge/leather-navbar-black@2x.png"; sourceTree = "<group>"; };
+		24C38C3615867F9F008F4772 /* navbar-back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-back-button.png"; path = "TidErPenge/navbar-back-button.png"; sourceTree = "<group>"; };
+		24C38C3715867F9F008F4772 /* navbar-back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-back-button@2x.png"; path = "TidErPenge/navbar-back-button@2x.png"; sourceTree = "<group>"; };
+		24C38C3815867F9F008F4772 /* navbar-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-button.png"; path = "TidErPenge/navbar-button.png"; sourceTree = "<group>"; };
+		24C38C3915867F9F008F4772 /* navbar-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar-button@2x.png"; path = "TidErPenge/navbar-button@2x.png"; sourceTree = "<group>"; };
+		24C43B2913D747D000A0D3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24C43B2C13D747E200A0D3E5 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		24E130AB155421960063335E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainView~ipad.xib"; sourceTree = "<group>"; };
+		24E130AD155421A40063335E /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = "da.lproj/MainView~ipad.xib"; sourceTree = "<group>"; };
+		258267F71469AADB00097370 /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/FlipsideView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248A414613BF686500409BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2426D75B1479813F00BC0C63 /* Twitter.framework in Frameworks */,
+				24A10DF013D5E3A60094FA1E /* CoreMotion.framework in Frameworks */,
+				248A414E13BF686500409BC4 /* UIKit.framework in Frameworks */,
+				245FE32013BF6924001737DC /* MessageUI.framework in Frameworks */,
+				248A415013BF686500409BC4 /* Foundation.framework in Frameworks */,
+				248A415213BF686500409BC4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248A416D13BF686500409BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A417213BF686500409BC4 /* UIKit.framework in Frameworks */,
+				248A417313BF686500409BC4 /* Foundation.framework in Frameworks */,
+				248A417413BF686500409BC4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B8515914543A4E00729BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B8515E14543A4E00729BB4 /* CoreGraphics.framework in Frameworks */,
+				24254532150119A300F4B18E /* SystemConfiguration.framework in Frameworks */,
+				242545301501199400F4B18E /* AudioToolbox.framework in Frameworks */,
+				244EA3461500B9B300BD68D4 /* iAd.framework in Frameworks */,
+				24B8515A14543A4E00729BB4 /* CoreMotion.framework in Frameworks */,
+				24B8515B14543A4E00729BB4 /* UIKit.framework in Frameworks */,
+				24B8515C14543A4E00729BB4 /* MessageUI.framework in Frameworks */,
+				24B8515D14543A4E00729BB4 /* Foundation.framework in Frameworks */,
+				248ECAE71479A53A00FE7FC0 /* Twitter.framework in Frameworks */,
+				247316B915029A7500EC28C8 /* libGoogleAdMobAds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		241E8DD813D317DB00FB9C45 /* Xib files */ = {
+			isa = PBXGroup;
+			children = (
+				258267F61469AADB00097370 /* FlipsideView.xib */,
+				249B23B513F5606E001E518D /* ShowLogView.xib */,
+				248506C213DF15B70074B27E /* SaveLogView.xib */,
+				2497D5B513D73F38007D99B0 /* MainView.xib */,
+				248A415F13BF686500409BC4 /* MainWindow.xib */,
+				242972F113FEA61C0026D74C /* SettingsView.xib */,
+				24E130AC155421960063335E /* MainView~ipad.xib */,
+			);
+			name = "Xib files";
+			sourceTree = "<group>";
+		};
+		245FDD5415069F7100B24867 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				24C38C3415867F9F008F4772 /* leather-navbar-black.png */,
+				24C38C3515867F9F008F4772 /* leather-navbar-black@2x.png */,
+				24C38C3615867F9F008F4772 /* navbar-back-button.png */,
+				24C38C3715867F9F008F4772 /* navbar-back-button@2x.png */,
+				24C38C3815867F9F008F4772 /* navbar-button.png */,
+				24C38C3915867F9F008F4772 /* navbar-button@2x.png */,
+				249043211403F5F5002E87A8 /* processing.png */,
+				249F382913F7FF6100032627 /* Default.png */,
+				24A4FFC913F7F5CA0080A157 /* bookmark.png */,
+				249A8DED13C4CB8F00FF5346 /* rsz_1time-and-money.png */,
+				249A8DEB13C4CB2C00FF5346 /* rsz_time-and-money.png */,
+			);
+			name = img;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		247316BA15029AEC00EC28C8 /* GAD */ = {
+			isa = PBXGroup;
+			children = (
+				247316B215029A7500EC28C8 /* GADBannerView.h */,
+				247316B315029A7500EC28C8 /* GADBannerViewDelegate.h */,
+				247316B415029A7500EC28C8 /* GADInterstitial.h */,
+				247316B515029A7500EC28C8 /* GADInterstitialDelegate.h */,
+				247316B615029A7500EC28C8 /* GADRequest.h */,
+				247316B715029A7500EC28C8 /* GADRequestError.h */,
+				247316B815029A7500EC28C8 /* libGoogleAdMobAds.a */,
+			);
+			name = GAD;
+			sourceTree = "<group>";
+		};
+		248A413E13BF686500409BC4 = {
+			isa = PBXGroup;
+			children = (
+				247316BA15029AEC00EC28C8 /* GAD */,
+				248A415313BF686500409BC4 /* TidErPenge */,
+				248A417713BF686500409BC4 /* TidErPengeTests */,
+				248A414C13BF686500409BC4 /* Frameworks */,
+				248A414A13BF686500409BC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248A414A13BF686500409BC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248A414913BF686500409BC4 /* TidErPenge.app */,
+				248A417113BF686500409BC4 /* TidErPengeTests.octest */,
+				24B8517314543A4E00729BB4 /* TidErPenge.Lite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248A414C13BF686500409BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24254531150119A300F4B18E /* SystemConfiguration.framework */,
+				2425452F1501199400F4B18E /* AudioToolbox.framework */,
+				244EA3451500B9B300BD68D4 /* iAd.framework */,
+				2426D75A1479813F00BC0C63 /* Twitter.framework */,
+				24A10DEF13D5E3A60094FA1E /* CoreMotion.framework */,
+				245FE31F13BF6924001737DC /* MessageUI.framework */,
+				248A414D13BF686500409BC4 /* UIKit.framework */,
+				248A414F13BF686500409BC4 /* Foundation.framework */,
+				248A415113BF686500409BC4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248A415313BF686500409BC4 /* TidErPenge */ = {
+			isa = PBXGroup;
+			children = (
+				245FDD5415069F7100B24867 /* img */,
+				248A415C13BF686500409BC4 /* TidErPengeAppDelegate.h */,
+				248A415D13BF686500409BC4 /* TidErPengeAppDelegate.m */,
+				241E8DD813D317DB00FB9C45 /* Xib files */,
+				248A416213BF686500409BC4 /* MainViewController.h */,
+				248A416313BF686500409BC4 /* MainViewController.m */,
+				248506BA13DF15A80074B27E /* SaveLogViewController.h */,
+				248506C513DF15BB0074B27E /* SaveLogViewController.m */,
+				242972E913FEA5F30026D74C /* SettingsViewController.h */,
+				242972EA13FEA5F30026D74C /* SettingsViewController.m */,
+				248A416713BF686500409BC4 /* LogsViewController.h */,
+				248A416813BF686500409BC4 /* LogsViewController.m */,
+				248A415413BF686500409BC4 /* Supporting Files */,
+				24BF38E813F2DDA10032F8DD /* ShowLogViewController.h */,
+				24BF38E913F2DDA10032F8DD /* ShowLogViewController.m */,
+			);
+			path = TidErPenge;
+			sourceTree = "<group>";
+		};
+		248A415413BF686500409BC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24ABC0EE1455D3A8000D9326 /* TidErPengeLite */,
+				24B8514E1454381100729BB4 /* TidErPenge */,
+				248A415913BF686500409BC4 /* TidErPenge-Prefix.pch */,
+				248A415A13BF686500409BC4 /* main.m */,
+				24C43B2A13D747D000A0D3E5 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248A417713BF686500409BC4 /* TidErPengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				248A417E13BF686500409BC4 /* TidErPengeTests.h */,
+				248A418013BF686500409BC4 /* TidErPengeTests.m */,
+				248A417813BF686500409BC4 /* Supporting Files */,
+			);
+			path = TidErPengeTests;
+			sourceTree = "<group>";
+		};
+		248A417813BF686500409BC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				248A417913BF686500409BC4 /* TidErPengeTests-Info.plist */,
+				248A417A13BF686500409BC4 /* InfoPlist.strings */,
+				248A417D13BF686500409BC4 /* TidErPengeTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24ABC0EE1455D3A8000D9326 /* TidErPengeLite */ = {
+			isa = PBXGroup;
+			children = (
+				24ABC0EF1455D3B9000D9326 /* TidErPenge Lite-Info.plist */,
+				24ABC0F51455D3CF000D9326 /* InfoPlist.strings */,
+			);
+			path = TidErPengeLite;
+			sourceTree = "<group>";
+		};
+		24B8514E1454381100729BB4 /* TidErPenge */ = {
+			isa = PBXGroup;
+			children = (
+				249B23BB13F57F8F001E518D /* TidErPenge-Info.plist */,
+				248A415613BF686500409BC4 /* InfoPlist.strings */,
+			);
+			name = TidErPenge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248A414813BF686500409BC4 /* TidErPenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248A418413BF686500409BC4 /* Build configuration list for PBXNativeTarget "TidErPenge" */;
+			buildPhases = (
+				248A414513BF686500409BC4 /* Sources */,
+				248A414613BF686500409BC4 /* Frameworks */,
+				248A414713BF686500409BC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TidErPenge;
+			productName = TidErPenge;
+			productReference = 248A414913BF686500409BC4 /* TidErPenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248A417013BF686500409BC4 /* TidErPengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248A418713BF686500409BC4 /* Build configuration list for PBXNativeTarget "TidErPengeTests" */;
+			buildPhases = (
+				248A416C13BF686500409BC4 /* Sources */,
+				248A416D13BF686500409BC4 /* Frameworks */,
+				248A416E13BF686500409BC4 /* Resources */,
+				248A416F13BF686500409BC4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248A417613BF686500409BC4 /* PBXTargetDependency */,
+			);
+			name = TidErPengeTests;
+			productName = TidErPengeTests;
+			productReference = 248A417113BF686500409BC4 /* TidErPengeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		24B8515014543A4E00729BB4 /* TidErPenge.Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B8516F14543A4E00729BB4 /* Build configuration list for PBXNativeTarget "TidErPenge.Lite" */;
+			buildPhases = (
+				24B8515114543A4E00729BB4 /* Sources */,
+				24B8515914543A4E00729BB4 /* Frameworks */,
+				24B8515F14543A4E00729BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TidErPenge.Lite;
+			productName = TidErPenge;
+			productReference = 24B8517314543A4E00729BB4 /* TidErPenge.Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248A414013BF686500409BC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 248A414313BF686500409BC4 /* Build configuration list for PBXProject "TidErPenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				da,
+				"en-US",
+			);
+			mainGroup = 248A413E13BF686500409BC4;
+			productRefGroup = 248A414A13BF686500409BC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248A414813BF686500409BC4 /* TidErPenge */,
+				248A417013BF686500409BC4 /* TidErPengeTests */,
+				24B8515014543A4E00729BB4 /* TidErPenge.Lite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248A414713BF686500409BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A415813BF686500409BC4 /* InfoPlist.strings in Resources */,
+				248A416113BF686500409BC4 /* MainWindow.xib in Resources */,
+				2497D5B313D73F38007D99B0 /* MainView.xib in Resources */,
+				249A8DEC13C4CB2C00FF5346 /* rsz_time-and-money.png in Resources */,
+				249A8DEE13C4CB8F00FF5346 /* rsz_1time-and-money.png in Resources */,
+				24C43B2813D747D000A0D3E5 /* Localizable.strings in Resources */,
+				248506C013DF15B70074B27E /* SaveLogView.xib in Resources */,
+				249B23B313F5606E001E518D /* ShowLogView.xib in Resources */,
+				24A4FFCA13F7F5CA0080A157 /* bookmark.png in Resources */,
+				249F382A13F7FF6100032627 /* Default.png in Resources */,
+				242972EF13FEA61C0026D74C /* SettingsView.xib in Resources */,
+				249043231403F5F5002E87A8 /* processing.png in Resources */,
+				258267F81469AADB00097370 /* FlipsideView.xib in Resources */,
+				24E130A9155421960063335E /* MainView~ipad.xib in Resources */,
+				24C38C3A15867F9F008F4772 /* leather-navbar-black.png in Resources */,
+				24C38C3B15867F9F008F4772 /* leather-navbar-black@2x.png in Resources */,
+				24C38C3C15867F9F008F4772 /* navbar-back-button.png in Resources */,
+				24C38C3D15867F9F008F4772 /* navbar-back-button@2x.png in Resources */,
+				24C38C3E15867F9F008F4772 /* navbar-button.png in Resources */,
+				24C38C3F15867F9F008F4772 /* navbar-button@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248A416E13BF686500409BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A417C13BF686500409BC4 /* InfoPlist.strings in Resources */,
+				248A417F13BF686500409BC4 /* TidErPengeTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B8515F14543A4E00729BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B8516114543A4E00729BB4 /* MainWindow.xib in Resources */,
+				24B8516214543A4E00729BB4 /* MainView.xib in Resources */,
+				24B8516414543A4E00729BB4 /* rsz_time-and-money.png in Resources */,
+				24B8516514543A4E00729BB4 /* rsz_1time-and-money.png in Resources */,
+				24B8516614543A4E00729BB4 /* Localizable.strings in Resources */,
+				24B8516714543A4E00729BB4 /* SaveLogView.xib in Resources */,
+				24B8516814543A4E00729BB4 /* ShowLogView.xib in Resources */,
+				24B8516914543A4E00729BB4 /* bookmark.png in Resources */,
+				24B8516A14543A4E00729BB4 /* Default.png in Resources */,
+				24B8516B14543A4E00729BB4 /* SettingsView.xib in Resources */,
+				24B8516C14543A4E00729BB4 /* processing.png in Resources */,
+				24ABC0F01455D3B9000D9326 /* TidErPenge Lite-Info.plist in Resources */,
+				24ABC0F31455D3CF000D9326 /* InfoPlist.strings in Resources */,
+				258267F91469AADB00097370 /* FlipsideView.xib in Resources */,
+				24E130AA155421960063335E /* MainView~ipad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		248A416F13BF686500409BC4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248A414513BF686500409BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A415B13BF686500409BC4 /* main.m in Sources */,
+				248A415E13BF686500409BC4 /* TidErPengeAppDelegate.m in Sources */,
+				248A416413BF686500409BC4 /* MainViewController.m in Sources */,
+				248A416913BF686500409BC4 /* LogsViewController.m in Sources */,
+				248506C313DF15BB0074B27E /* SaveLogViewController.m in Sources */,
+				24BF38EB13F2DDA10032F8DD /* ShowLogViewController.m in Sources */,
+				242972EC13FEA5F30026D74C /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248A416C13BF686500409BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A418113BF686500409BC4 /* TidErPengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B8515114543A4E00729BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B8515214543A4E00729BB4 /* main.m in Sources */,
+				24B8515314543A4E00729BB4 /* TidErPengeAppDelegate.m in Sources */,
+				24B8515414543A4E00729BB4 /* MainViewController.m in Sources */,
+				24B8515514543A4E00729BB4 /* LogsViewController.m in Sources */,
+				24B8515614543A4E00729BB4 /* SaveLogViewController.m in Sources */,
+				24B8515714543A4E00729BB4 /* ShowLogViewController.m in Sources */,
+				24B8515814543A4E00729BB4 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248A417613BF686500409BC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248A414813BF686500409BC4 /* TidErPenge */;
+			targetProxy = 248A417513BF686500409BC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		242972F113FEA61C0026D74C /* SettingsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242972F013FEA61C0026D74C /* en */,
+				242972F213FEA6200026D74C /* da */,
+			);
+			name = SettingsView.xib;
+			sourceTree = "<group>";
+		};
+		248506C213DF15B70074B27E /* SaveLogView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248506C113DF15B70074B27E /* en */,
+				248506C613DF15C80074B27E /* da */,
+			);
+			name = SaveLogView.xib;
+			sourceTree = "<group>";
+		};
+		248506C513DF15BB0074B27E /* SaveLogViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248506C413DF15BB0074B27E /* en */,
+			);
+			name = SaveLogViewController.m;
+			sourceTree = "<group>";
+		};
+		248A415613BF686500409BC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248A415713BF686500409BC4 /* en */,
+				24A4FFC813F7F23F0080A157 /* da */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		248A415F13BF686500409BC4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248A416013BF686500409BC4 /* en */,
+				2497D5BC13D74297007D99B0 /* da */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		248A417A13BF686500409BC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248A417B13BF686500409BC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2497D5B513D73F38007D99B0 /* MainView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2497D5B413D73F38007D99B0 /* en */,
+				2497D5B713D73F56007D99B0 /* da */,
+			);
+			name = MainView.xib;
+			sourceTree = "<group>";
+		};
+		249B23B513F5606E001E518D /* ShowLogView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249B23B713F56073001E518D /* da */,
+				2426D75814797D5E00BC0C63 /* en */,
+			);
+			name = ShowLogView.xib;
+			sourceTree = "<group>";
+		};
+		24ABC0F51455D3CF000D9326 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24ABC0F41455D3CF000D9326 /* en */,
+				24ABC0F61455D3D5000D9326 /* da */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		24C43B2A13D747D000A0D3E5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C43B2913D747D000A0D3E5 /* en */,
+				24C43B2C13D747E200A0D3E5 /* da */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		24E130AC155421960063335E /* MainView~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E130AB155421960063335E /* en */,
+				24E130AD155421A40063335E /* da */,
+			);
+			name = "MainView~ipad.xib";
+			sourceTree = "<group>";
+		};
+		258267F61469AADB00097370 /* FlipsideView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258267F71469AADB00097370 /* da */,
+				2426D75914797EC800BC0C63 /* en */,
+			);
+			name = FlipsideView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		242DC9EA13BF7A4700916236 /* Ad hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jesper Nielsen (L5H2L76RE6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jesper Nielsen";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "512E8235-EC81-40C9-BB91-9281C3FEA87F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "199A3A24-1477-43B9-AB1C-E099B81CBB7B";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = "Ad hoc";
+		};
+		242DC9EB13BF7A4700916236 /* Ad hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPenge/TidErPenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad hoc";
+		};
+		242DC9EC13BF7A4700916236 /* Ad hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TidErPenge.app/TidErPenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPengeTests/TidErPengeTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeTests/TidErPengeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad hoc";
+		};
+		248A418213BF686500409BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		248A418313BF686500409BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jesper Nielsen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jesper Nielsen";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "199A3A24-1477-43B9-AB1C-E099B81CBB7B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "199A3A24-1477-43B9-AB1C-E099B81CBB7B";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		248A418513BF686500409BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPenge/TidErPenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		248A418613BF686500409BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPenge/TidErPenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		248A418813BF686500409BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TidErPenge.app/TidErPenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPengeTests/TidErPengeTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeTests/TidErPengeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		248A418913BF686500409BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TidErPenge.app/TidErPenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPengeTests/TidErPengeTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeTests/TidErPengeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		24B8517014543A4E00729BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesper Nielsen (L5H2L76RE6)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeLite/TidErPenge Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "-DLITE";
+				PRODUCT_NAME = TidErPenge.Lite;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C6F1B4AD-26D4-4402-9D32-29B826E4B8C2";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		24B8517114543A4E00729BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jesper Nielsen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesper Nielsen (L5H2L76RE6)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeLite/TidErPenge Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "-DLITE";
+				PRODUCT_NAME = TidErPenge.Lite;
+				PROVISIONING_PROFILE = "7828E763-96B4-4A1F-BECA-43CEA92E109C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D62FC374-2AC1-470C-917D-346313D3BB3C";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		24B8517214543A4E00729BB4 /* Ad hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jesper Nielsen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jesper Nielsen";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TidErPenge/TidErPenge-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "TidErPengeLite/TidErPenge Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_CFLAGS = "-DLITE";
+				PRODUCT_NAME = TidErPenge.Lite;
+				PROVISIONING_PROFILE = "7828E763-96B4-4A1F-BECA-43CEA92E109C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7828E763-96B4-4A1F-BECA-43CEA92E109C";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad hoc";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248A414313BF686500409BC4 /* Build configuration list for PBXProject "TidErPenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248A418213BF686500409BC4 /* Debug */,
+				248A418313BF686500409BC4 /* Release */,
+				242DC9EA13BF7A4700916236 /* Ad hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248A418413BF686500409BC4 /* Build configuration list for PBXNativeTarget "TidErPenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248A418513BF686500409BC4 /* Debug */,
+				248A418613BF686500409BC4 /* Release */,
+				242DC9EB13BF7A4700916236 /* Ad hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248A418713BF686500409BC4 /* Build configuration list for PBXNativeTarget "TidErPengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248A418813BF686500409BC4 /* Debug */,
+				248A418913BF686500409BC4 /* Release */,
+				242DC9EC13BF7A4700916236 /* Ad hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B8516F14543A4E00729BB4 /* Build configuration list for PBXNativeTarget "TidErPenge.Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B8517014543A4E00729BB4 /* Debug */,
+				24B8517114543A4E00729BB4 /* Release */,
+				24B8517214543A4E00729BB4 /* Ad hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 248A414013BF686500409BC4 /* Project object */;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>TidErPenge Lite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TidErPenge.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>241B0C65144B21AA002B2469</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>248A414813BF686500409BC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>248A417013BF686500409BC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24B8515014543A4E00729BB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

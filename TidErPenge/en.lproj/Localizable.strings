@@ -1,0 +1,76 @@
+/* 
+  Localizable.strings
+  TidErPenge
+
+  Created by Jesper Nielsen on 20/07/11.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+"TimeIsMoney" = "Time Is Money";
+"Meeting" = "Meeting";
+
+"PersonWarningTitle" = "Specify Attendees";
+"PersonWarningMsg" = "Specify how many persons that are attending the meeting";
+
+"SalaryWarningTitle" = "Specify hourly rate";
+"SalaryWarningMsg" = "Specify the average hourly salary per person";
+
+"CantClear" = "Can't clear input";
+"CantClearMsg" = "Can't clear the input while the counter is running";
+
+"MessageBody" = "Meeting with %@ persons with an average hourly salary of %@\nTime spent: %@\nMoney spent: %@";
+
+"MsgSentTitle" = "Message sent";
+"MsgSent" = "The message was sent";
+
+"Error" = "Error";
+"MsgNotSent" = "Couldn't send the message";
+
+"MailSentTitle" = "Mail sent";
+"MailSent" = "The mail was sent";
+
+"Result" = "Result";
+
+"ResultTxt" = "Time spent on meeting: %@\rMoney spent: %@";
+
+"Close" = "Close";
+
+"MailResult" = "Mail Result";
+"TextResult" = "Text Result";
+
+"Delete" = "Delete";
+"DeleteAll" = "Delete All";
+"Edit" = "Edit";
+"Back" = "Back";
+
+"SendText" = "Send Text";
+"SendMail" = "Send Mail";
+
+"ShareResult" = "Share a result with others";
+
+"NothingToClear" = "Nothing to clear";
+"LogEmpty" = "The log is empty";
+"Sure" = "Are you sure?";
+"Cancel" = "Cancel";
+"Yes" = "Yes";
+
+"LogMsg" = "'%@' held %@\nMoney spent: %@\nTime spent: %@\nPersons: %@\nMeeting notes:%@";
+
+"LogHeadline" = "%@ - %@";
+"LogSubtitle" = "Spent: %@  - Time spent: %@";
+
+"SaveLog" = "Save log";
+"NoTitle" = "No Title";
+"NoInfo" = "No notes";
+
+"EnterTitle" = "Enter a title";
+"EnterTitleMsg" = "Specify a title for the meeting";
+
+"Resume" = "Resume";
+
+"ShareTitle" = "Share meeting info";
+"ShareMail" = "Share via e-mail";
+"ShareSMS" = "Share via SMS";
+
+"NotAvailable" = "Not available";
+"Feature" = "The log feature is not available in the Lite version";
+"Upgrade" = "Upgrade";

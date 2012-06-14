@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  TidErPenge
+
+  Created by Jesper Nielsen on 20/07/11.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+
+"TimeIsMoney" = "Tid Er Penge";
+"Meeting" = "Møde";
+
+"PersonWarningTitle" = "Udfyld antal personer";
+"PersonWarningMsg" = "Angiv hvor mange personer der er på mødet";
+
+"SalaryWarningTitle" = "Udfyld timeløn";
+"SalaryWarningMsg" = "Udfyld den gennemsnitlige timeløn pr. person";
+
+"CantClear" = "Kan ikke rydde input";
+"CantClearMsg" = "Kan ikke rydde input når tælleren er i gang";
+
+"MessageBody" = "Møde med %@ personer med en gennemsnitlig timeløn på %@ kr\nTid forbrugt: %@\nPenge forbrugt: %@";
+
+"MsgSentTitle" = "Besked sendt";
+"MsgSent" = "Beskeden blev sendt";
+
+"Error" = "Fejl";
+"MsgNotSent" = "Kunne ikke sende beskeden";
+
+"MailSentTitle" = "Mail sendt";
+"MailSent" = "Mailen blev sendt";
+
+"Result" = "Resultat";
+
+"ResultTxt" = "Tid forbrugt på mødet: %@\rPenge forbrugt: %@";
+
+"Close" = "Luk";
+
+"MailResult" = "Mail Resultat";
+"TextResult" = "SMS Resultat";
+
+"Delete" = "Slet";
+"DeleteAll" = "Slet Alle";
+"Edit" = "Rediger";
+"Back" = "Tilbage";
+
+"SendText" = "Send SMS";
+"SendMail" = "Send Mail";
+
+"ShareResult" = "Del et resultat med andre";
+
+"NothingToClear" = "Intet at rydde";
+"LogEmpty" = "Loggen er tom";
+"Sure" = "Er du sikker?";
+"Cancel" = "Annuller";
+"Yes" = "Ja";
+
+"LogMsg" = "'%@' afholdt d. %@\nPenge forbrugt: %@\nTid forbrugt: %@\nAntal personer: %@\nInfo om mødet:%@";
+
+
+"LogHeadline" = "%@ - %@";
+"LogSubtitle" = "Forbrug: %@  - Tidsforbrug: %@";
+
+"SaveLog" = "Gem log";
+"NoTitle" = "Ingen titel";
+"NoInfo" = "Ingen info";
+
+"EnterTitle" = "Angiv en titel";
+"EnterTitleMsg" = "Udfyld en titel til mødet";
+
+
+"Resume" = "Genoptag";
+
+"ShareTitle" = "Del møde info";
+"ShareMail" = "Del via e-mail";
+"ShareSMS" = "Del via SMS";
+
+"NotAvailable" = "Ikke tilgængelig";
+"Feature" = "Log funktionen er ikke tilgængelig i Lite-versionen";
+"Upgrade" = "Opgradér";
